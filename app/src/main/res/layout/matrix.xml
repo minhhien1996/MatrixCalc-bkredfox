@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/scrollView">
+    <TableLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="0,1,2,3">
+        <TableRow
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <LinearLayout android:layout_column="1"
+                android:layout_span="2"
+                android:layout_gravity="center">
+                <Button
+                    android:layout_width="75dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/btnRmCol"
+                    android:onClick="btnRmCol_clickListener"
+                    android:textSize="20dp"
+                    android:text="-"
+                    android:textColor="@drawable/text_color"
+                    android:layout_gravity="center" />
+                <Button
+                    android:layout_width="75dp"
+                    android:layout_height="50dp"
+                    android:text="+"
+                    android:id="@+id/btnAddCol"
+                    android:onClick="btnAddCol_clickListener"
+                    android:textSize="20dp"
+                    android:textColor="@drawable/text_color"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+        </TableRow>
+        <TableRow android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content">
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="75dp"
+                    android:text="-"
+                    android:id="@+id/btnRmRow"
+                    android:onClick="btnRmRow_clickListener"
+                    android:textSize="20dp"
+                    android:textColor="@drawable/text_color" />
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="75dp"
+                    android:text="+"
+                    android:id="@+id/btnAddRow"
+                    android:onClick="btnAddRow_clickListener"
+                    android:textSize="20dp"
+                    android:textColor="@drawable/text_color" />
+            </LinearLayout>
+
+            <TableLayout
+                android:id="@+id/matrixContainer"
+                android:layout_span="3">
+            </TableLayout>
+        </TableRow>
+        <TableRow
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+            <LinearLayout android:layout_gravity="center"
+                android:clickable="false"
+                android:contextClickable="false"
+                android:id="@+id/llBack">
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnMenu"
+                    android:onClick="backToMenu"
+                    android:background="@drawable/btn_back"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp" />
+            </LinearLayout>
+
+            <LinearLayout android:layout_gravity="center"
+                android:id="@+id/llLoad">
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnLoad"
+                    android:onClick="load"
+                    android:background="@drawable/btn_load"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp" />
+            </LinearLayout>
+
+            <LinearLayout android:layout_gravity="center"
+                android:id="@+id/llSave">
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnSave"
+                    android:background="@drawable/btn_save"
+                    android:onClick="save"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp" />
+            </LinearLayout>
+
+            <LinearLayout android:layout_gravity="center"
+                android:id="@+id/llCalculate">
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnCal"
+                    android:background="@drawable/btn_calculate"
+                    android:onClick="calculate"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp" />
+            </LinearLayout>
+
+        </TableRow>
+    </TableLayout>
+
+</ScrollView>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/scrollView">
+    <LinearLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.bkredfox.minhhien.matrixcalc_bkredfox.setting"
+        android:orientation="vertical"
+        android:id="@+id/settingLayout">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/language"/>
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/languages"
+                android:onClick="onRadioButtonClicked">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/vi_lang"
+                    android:id="@+id/viRBtn"
+                    android:onClick="onRadioButtonClicked" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/en_lang"
+                    android:id="@+id/enRBtn"
+                    android:onClick="onRadioButtonClicked" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/theme"/>
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/themes"
+                android:onClick="onThemeRadioButtonClicked"
+                android:nestedScrollingEnabled="false">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/theme1"
+                    android:onClick="onThemeRadioButtonClicked"
+                    android:text="@string/theme1" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/theme2"
+                    android:id="@+id/theme2"
+                    android:onClick="onThemeRadioButtonClicked" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/theme3"
+                    android:id="@+id/theme3"
+                    android:onClick="onThemeRadioButtonClicked" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/theme4"
+                    android:id="@+id/theme4"
+                    android:onClick="onThemeRadioButtonClicked" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/theme5"
+                    android:id="@+id/theme5"
+                    android:onClick="onThemeRadioButtonClicked" />
+            </RadioGroup>
+
+        </LinearLayout>
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:stretchColumns="0,1,2"
+            android:layout_marginTop="20dp">
+
+            <TableRow>
+                <LinearLayout android:layout_gravity="center"
+                    android:id="@+id/llDiscard">
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/btnDiscard"
+                        android:onClick="discardSetting"
+                        android:background="@drawable/btn_discard"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp" />
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="center"
+                    android:id="@+id/llApply">
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/btnApply"
+                        android:onClick="applySetting"
+                        android:background="@drawable/btn_apply"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp" />
+                </LinearLayout>
+
+            </TableRow>
+
+        </TableLayout>
+    </LinearLayout>
+
+</ScrollView>

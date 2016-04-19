@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">MatrixCal</string>
+    <string name="calculate">Calculate</string>
+    <string name="setting">Setting</string>
+    <string name="exit">Exit</string>
+    <string name="title_activity_setting">setting</string>
+    <string name="load">Load</string>
+    <string name="save">Save</string>
+    <string name="back_to_menu">Back to menu</string>
+    <string name="discard">Discard</string>
+    <string name="apply">Apply</string>
+    <string name="add">Add</string>
+    <string name="minus">Minus</string>
+    <string name="product">Multiply</string>
+    <string name="numProduct">Scalar Multiply</string>
+    <string name="transpose">Transpose</string>
+    <string name="invert">Invert</string>
+    <string name="trace">Trace</string>
+    <string name="determination">Determination</string>
+    <string name="orthogonic">Orthogonic</string>
+    <string name="storage">Storage</string>
+    <string name="Menu">Matrix Calculator</string>
+    <string name="Function">Function</string>
+    <string name="MatrixDisplay">Matrix Display</string>
+    <string name="invalid_input">Invalid input</string>
+    <string name="min_col">Too few columns</string>
+    <string name="max_col">Too many columns</string>
+    <string name="min_row">Too few rows</string>
+    <string name="max_row">Too many rows</string>
+    <string name="action_canceled">The operation is canceled</string>
+    <string name="start_over">New operation</string>
+    <string name="load_canceled">Load iss canceled</string>
+    <string name="language">Language</string>
+    <string name="vi_lang">Vietnamese</string>
+    <string name="en_lang">English</string>
+    <string name="theme">Theme Color</string>
+    <string name="theme1">Green</string>
+    <string name="theme2">Brown</string>
+    <string name="theme3">Blue</string>
+    <string name="theme4">Grey</string>
+    <string name="theme5">Red</string>
+    <string name="under_contruction">Under Contruction</string>
+    <string name="exist">Existđè, will be overwritten</string>
+    <string name="not_exist">Not exist</string>
+    <string name="clear">Storage cleared</string>
+
+</resources>

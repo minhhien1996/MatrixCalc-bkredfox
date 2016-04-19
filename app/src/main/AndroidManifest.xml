@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bkredfox.minhhien.matrixcalc_bkredfox">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.bkredfox.minhhien.matrixcalc_bkredfox.matrixDisplay"
+            android:configChanges="locale|orientation"
+            android:label="@string/MatrixDisplay"/>
+        <activity android:name="com.bkredfox.minhhien.matrixcalc_bkredfox.menu"
+            android:configChanges="locale|orientation"
+            android:label="@string/Menu">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.bkredfox.minhhien.matrixcalc_bkredfox.setting"
+            android:configChanges="locale|orientation"
+            android:label="@string/setting"/>
+        <activity android:name="com.bkredfox.minhhien.matrixcalc_bkredfox.load"
+            android:configChanges="locale|orientation"
+            android:label="@string/storage"/>
+        <activity android:name="com.bkredfox.minhhien.matrixcalc_bkredfox.functions"
+            android:configChanges="locale|orientation"
+            android:label="@string/Function"></activity>
+        <activity android:name="com.bkredfox.minhhien.matrixcalc_bkredfox.save"
+            android:configChanges="locale|orientation"
+            android:label="@string/storage"></activity>
+    </application>
+
+</manifest>
